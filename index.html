@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Is That My Sock's Mate? The internet's lost-and-found for single socks. Browse hundreds of lonely socks searching for their partners." />
+  <meta property="og:title" content="Is That My Sock's Mate? 🧦" />
+  <meta property="og:description" content="Got a sock with no match? You're not alone. Browse our lost sock collection." />
+  <meta property="og:type" content="website" />
+  <title>Is That My Sock's Mate? 🧦</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="emoji-dryer" aria-hidden="true">🌀</div>
+    <h1>Is That My Sock's Mate?</h1>
+    <p class="tagline">
+      You've got ONE sock and zero answers. You're in the right place.
+      The dryer time-traveled it to a different dryer — somewhere out there, it's waiting.
+    </p>
+    <span class="dryer-badge">🧦 The World's Largest Lost Sock Collection</span>
+  </header>
+
+  <!-- ── Stats Bar ── -->
+  <div class="stats-bar" role="region" aria-label="Site statistics">
+    <div class="stat">
+      <span class="num" id="total-count">28</span>
+      <span class="label">Lonely Socks</span>
+    </div>
+    <div class="stat">
+      <span class="num" id="matched-count">47</span>
+      <span class="label">Matches Today</span>
+    </div>
+    <div class="stat">
+      <span class="num">4</span>
+      <span class="label">Categories</span>
+    </div>
+    <div class="stat">
+      <span class="num">∞</span>
+      <span class="label">Missing Mates</span>
+    </div>
+  </div>
+
+  <!-- ── Controls ── -->
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search brand, color, type…"
+        aria-label="Search socks"
+        autocomplete="off"
+      />
+    </div>
+    <div class="filters" role="group" aria-label="Filter by category">
+      <button class="filter-btn active" data-filter="all">All Socks</button>
+      <button class="filter-btn" data-filter="kids">👦 Kids</button>
+      <button class="filter-btn" data-filter="mens">🧔 Men's</button>
+      <button class="filter-btn" data-filter="womens">👩 Women's</button>
+      <button class="filter-btn" data-filter="unisex">🫶 Unisex</button>
+    </div>
+  </div>
+
+  <!-- ── Sock Grid ── -->
+  <main>
+    <div id="sock-grid" class="sock-grid" role="list" aria-label="Lost socks"></div>
+    <div id="empty-state" aria-live="polite">
+      <div class="big-emoji">🧦❓</div>
+      <h2>No socks found!</h2>
+      <p>Try a different search or category.</p>
+    </div>
+  </main>
+
+  <!-- ── Sock Detail Modal ── -->
+  <div id="modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+    <div class="modal" tabindex="-1">
+      <button id="modal-close" class="close-btn" aria-label="Close">&times;</button>
+      <div class="sock-big" id="modal-emoji">🧦</div>
+      <span id="modal-cat" class="category-badge"></span>
+      <h2 id="modal-name"></h2>
+      <div class="modal-brand" id="modal-brand"></div>
+      <p id="modal-desc"></p>
+      <p style="font-size:0.8rem;color:#adb5bd;margin-bottom:20px" id="modal-since"></p>
+      <button id="modal-share" class="share-btn">📤 Share This Sock</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ── -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>🧦 <strong>Is That My Sock's Mate?</strong> — Because every sock deserves a partner.</p>
+    <p style="margin-top:8px">
+      Got a sock to add? Photos coming soon.
+      In the meantime, <a href="mailto:hello@isthatmysocksmate.com">email us your sock story</a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
