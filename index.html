@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <title>Sock Signal</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .hero {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 20px;
+      }
+      h1 {
+        margin: 0 0 8px;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      .email {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <img src="images/hero-banner.svg" alt="Sock Signal hero banner" class="hero" />
+      <section class="card">
+        <h1 id="site-name">Sock Signal</h1>
+        <p>Find your missing sock the dryer time traveled to a different dryer.</p>
+        <p>
+          Contact:
+          <a id="contact-email" class="email" href="mailto:chickenchase2026@gmail.com">chickenchase2026@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <script>
+      (async () => {
+        try {
+          const response = await fetch('./site.config.json', { cache: 'no-store' });
+          if (!response.ok) {
+            return;
+          }
+
+          const config = await response.json();
+          const siteName = config?.site?.name;
+          const email = config?.site?.contactEmail;
+
+          if (siteName) {
+            const siteNameElement = document.getElementById('site-name');
+            siteNameElement.textContent = siteName;
+            document.title = siteName;
+          }
+
+          if (!email) {
+            return;
+          }
+
+          const emailElement = document.getElementById('contact-email');
+          emailElement.textContent = email;
+          emailElement.href = `mailto:${email}`;
+        } catch {
+          // Keep fallback email already in HTML.
+        }
+      })();
+    </script>
+  </body>
+</html>

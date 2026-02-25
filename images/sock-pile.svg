@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Pile of colorful socks illustration">
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <g transform="translate(100 90)">
+    <path d="M120 40h120v200c0 48 38 86 86 86h72v92H120v-86h76c24 0 44-20 44-44V40z" fill="#f97316"/>
+    <path d="M300 20h120v220c0 48 38 86 86 86h72v92H300v-86h76c24 0 44-20 44-44V20z" fill="#22c55e"/>
+    <path d="M480 60h120v180c0 48 38 86 86 86h72v92H480v-86h76c24 0 44-20 44-44V60z" fill="#3b82f6"/>
+    <path d="M660 32h120v208c0 48 38 86 86 86h72v92H660v-86h76c24 0 44-20 44-44V32z" fill="#e879f9"/>
+  </g>
+  <text x="600" y="610" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#0f172a">Lost sock recovery in progress…</text>
+</svg>

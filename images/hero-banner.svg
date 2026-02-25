@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-label="Sock Signal hero banner">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#grad)"/>
+  <g fill="#0f172a">
+    <path d="M180 110h120v180c0 42 34 76 76 76h64v76H180v-70h62c20 0 36-16 36-36V110z"/>
+    <path d="M470 90h120v200c0 42 34 76 76 76h64v76H470v-70h62c20 0 36-16 36-36V90z"/>
+    <path d="M760 120h120v170c0 42 34 76 76 76h64v76H760v-70h62c20 0 36-16 36-36V120z"/>
+  </g>
+  <text x="980" y="215" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" fill="#082f49">Sock Signal</text>
+  <text x="980" y="285" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#083344">Find your missing sock before laundry day ends.</text>
+</svg>

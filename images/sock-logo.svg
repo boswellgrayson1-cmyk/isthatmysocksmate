@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sock Signal logo">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#a5f3fc" />
+      <stop offset="100%" stop-color="#67e8f9" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <path d="M168 96h120v176c0 44 36 80 80 80h16v64H168v-80h72c22 0 40-18 40-40V96h-80v168c0 35-29 64-64 64H96v-56h40c18 0 32-14 32-32V96z" fill="#0f172a"/>
+  <circle cx="352" cy="224" r="24" fill="#0f172a"/>
+  <circle cx="304" cy="208" r="10" fill="#ffffff"/>
+  <path d="M122 430c46-26 96-26 142 0" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/>
+</svg>
