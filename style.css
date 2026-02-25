@@ -1,0 +1,118 @@
+/* isthatmysocksmate */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #fdf6ec;
+  color: #333;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #4a90d9;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
+}
+
+header p.tagline {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  opacity: 0.9;
+}
+
+nav {
+  background-color: #357abd;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2c5f8a;
+  margin: 1.5rem 0 0.6rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  color: #2c5f8a;
+  margin: 1.2rem 0 0.4rem;
+}
+
+p {
+  margin-bottom: 0.9rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.4rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+.tip-card {
+  background: #fff;
+  border: 1px solid #dde6f0;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+  margin-top: 0;
+}
+
+.ad-slot {
+  background: #f0f4fa;
+  border: 1px dashed #aac0d8;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: #7a95b0;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+footer {
+  background-color: #4a90d9;
+  color: #e8f0fb;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #cfe0f8;
+}
